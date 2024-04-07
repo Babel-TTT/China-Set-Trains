@@ -230,6 +230,8 @@
 #include "src/wagons/b22_item.pnml"
 #include "src/wagons/l70_graphics.pnml"
 #include "src/wagons/l70_item.pnml"
+#include "src/wagons/g50_graphics.pnml"
+#include "src/wagons/g50_item.pnml"
 
 // Another Function File
 #include "src/function2.pnml"
@@ -371,6 +373,8 @@
 #include "src/25-emu/crh380b_item.pnml"
 #include "src/25-emu/crh380cl_graphics.pnml"
 #include "src/25-emu/crh380cl_item.pnml"
+#include "src/25-emu/cr300bf_graphics.pnml"
+#include "src/25-emu/cr300bf_item.pnml"
 #include "src/25-emu/cr400af_graphics.pnml"
 #include "src/25-emu/cr400af_item.pnml"
 #include "src/25-emu/cr400bf_graphics.pnml"
