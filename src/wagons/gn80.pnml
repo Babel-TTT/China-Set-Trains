@@ -41,7 +41,7 @@ switch (FEAT_TRAINS, SELF, switch_gn80_graphics, position_in_articulated_veh % 3
 }
 
 switch (FEAT_TRAINS, SELF, switch_gn80_capacity, position_in_articulated_veh % 3) {
-    1: return 70;
+    1: return 80;
     return 0;
 }
 
@@ -100,7 +100,7 @@ item (FEAT_TRAINS, gn80) {
         running_cost_factor:            5 * runningcostfactor();
         purchase_running_cost_factor:   20;
         purchase_cargo_capacity:        81/3;
-        name:                            switch_gn80_name;
+        name:                           switch_gn80_name;
 
     }
 }
