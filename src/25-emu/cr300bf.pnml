@@ -36,10 +36,7 @@ switch (FEAT_TRAINS, SELF, switch_cr300bf_articulated_part, extra_callback_info1
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_front_graphics, position_in_articulated_veh % 3) {
-    1: spriteset_cr300bf_front;
-    empty_sprites;
-}
+// gfx
 
 switch (FEAT_TRAINS, SELF, switch_cr300bf_head_capacity, position_in_articulated_veh % 3) {
     1: return 36;
@@ -105,45 +102,20 @@ switch (FEAT_TRAINS, SELF, switch_cr300bf_if_wagon_end, position_in_consist_from
     switch_cr300bf_length_class;
 }
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_graphics, (position_in_consist_from_end % 3) == 1) {
-    1: switch_cr300bf_if_wagon_end;
+switch (FEAT_TRAINS, SELF, switch_cr300bf_graphics_if_front, position_in_consist / 3){
+    0: spriteset_cr300bf_front;
+    switch_cr300bf_if_wagon_end;
+}
+
+switch (FEAT_TRAINS, SELF, switch_cr300bf_graphics, (position_in_articulated_veh % 3)){
+    1: switch_cr300bf_graphics_if_front;
     empty_sprites;
 }
 //capacity
 
-/* switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_ze, position_in_articulated_veh % 3) {
-    1: return 90;
-    return 0;
-}
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_zy, position_in_articulated_veh % 3) {
-    1: return 72;
-    return 0;
-}
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_zs, position_in_articulated_veh % 3) {
-    1: return 32;
-    return 0;
-}
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_sw, position_in_articulated_veh % 3) {
-    1: return 18;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_zec, position_in_articulated_veh % 3) {
-    1: return 63;
-    return 0;
-} */
-
-/* switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity, vehicle_type_id) {
-    1024: switch_cr300bf_middle_capacity_ze;
-    1025: switch_cr300bf_middle_capacity_zy;
-    1027: switch_cr300bf_middle_capacity_zs;
-    1028: switch_cr300bf_middle_capacity_sw;
-    1035: switch_cr300bf_middle_capacity_zec;
-    return 0;
-} */
 switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity_id, vehicle_type_id) {
     1024: return 90;
     1025: return 72;
@@ -157,30 +129,7 @@ switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_capacity, position_in_articulat
     1: switch_cr300bf_middle_capacity_id;
     return 0;
 }
-/* switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_ze, position_in_articulated_veh % 3) {
-    1: return 65;
-    return 0;
-}
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_zy, position_in_articulated_veh % 3) {
-    1: return 48;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_zs, position_in_articulated_veh % 3) {
-    1: return 24;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_sw, position_in_articulated_veh % 3) {
-    1: return 12;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_zec, position_in_articulated_veh % 3) {
-    1: return 36;
-    return 0;
-} */
 
 switch (FEAT_TRAINS, SELF, switch_cr300bf_cab_capacity_id, vehicle_type_id) {
     1024: return 65;
@@ -237,14 +186,7 @@ switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_running_power, vehicle_type_id) 
     return 0;
 }
 
-/* switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_cost_unpower, vehicle_type_id) {
-    1024: return 16;
-    1025: return 20;
-    1027: return 24;
-    1028: return 25;
-    1035: return 26;
-    return 0;
-} */
+
 
 switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_running_unpower, vehicle_type_id) {
     1024: return 13;
@@ -254,62 +196,17 @@ switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_running_unpower, vehicle_type_id
     1035: return 22;
     return 0;
 }
-/*
-switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_cost, vehicle_is_potentially_powered) {
-    1: switch_cr300bf_wagon_cost_power;
-    switch_cr300bf_wagon_cost_unpower;
-} */
+
 
 switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_running, vehicle_is_potentially_powered) {
     1: switch_cr300bf_wagon_running_power;
     switch_cr300bf_wagon_running_unpower;
 }
 
-//power
-/* switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_power, (position_in_consist % 6 == 4)) {
-    0: return 1830;
-    return 0;
-} */
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_if_middle_wagon_is_tp_pw, (((position_in_consist / 3) + 1) == (num_vehs_in_consist * 11 / 48) || (((position_in_consist / 3) - 2) == (num_vehs_in_consist * 11 / 48))) || (((position_in_consist / 3) + 1) == (num_vehs_in_consist / 16) || (((position_in_consist / 3) - 2) == (num_vehs_in_consist / 16)))) {
-    0: return 1830;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_middle_wagon_reconect_pw, (((position_in_consist / 3) + 1) == (num_vehs_in_consist / 6)) || ((position_in_consist / 3) == (num_vehs_in_consist / 6))) {
-    1: return 0;
-    switch_cr300bf_if_middle_wagon_is_tp_pw;
-}
-
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_if_middle_wagon_tp_meddium_pw, (((position_in_consist / 3) + 1) == (num_vehs_in_consist / 8)) || (((position_in_consist / 3) - 2) == (num_vehs_in_consist / 8))) {
-    0: return 1830;
-    return 0;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_if_middle_wagon_tp_short_pw, ((position_in_consist / 3) + 1) == (num_vehs_in_consist / 6)) {
-    0: return 1830;
-    return 0;
-}
-
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_length_class_pw, num_vehs_in_consist / 3) {
-    2..6:   switch_cr300bf_if_middle_wagon_tp_short_pw;
-    7..12:  switch_cr300bf_if_middle_wagon_tp_meddium_pw;
-    switch_cr300bf_middle_wagon_reconect_pw;
-}
-
-switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_power, position_in_consist_from_end) {
-    0..2: return 0;
-    switch_cr300bf_length_class_pw;
-}
+//item
 
 
 
-switch (FEAT_TRAINS, SELF, switch_cr300bf_wagon_traction, vehicle_is_potentially_powered) {
-    1: return int(0.135*255);
-    return 0;
-}
 
 
 item (FEAT_TRAINS, cr300bf) {
@@ -341,9 +238,9 @@ item (FEAT_TRAINS, cr300bf) {
 
         // Stats
         speed:                          250 km/h;
-        power:                          1365 kW;
-        weight:                         54 ton;
-        tractive_effort_coefficient:    0.135;
+        power:                          5460 kW;
+        weight:                         432 ton;
+        tractive_effort_coefficient:    0.0675;
         cost_factor:                    73;
         running_cost_base:              RUNNING_COST_ELECTRIC;
         running_cost_factor:            59;
@@ -353,37 +250,33 @@ item (FEAT_TRAINS, cr300bf) {
     graphics {
         // Menu
         additional_text:                string(STR_DESC_6, string(STR_CRH_CAN_ATTACH_WAGON), string(STR_CR300BF_NICKNAME), string(STR_CR300_CONSIST), string(STR_RELDEC_VERY_LOW, 5), string(STR_CR300_HEAD_SEAT));
-        can_attach_wagon:               crhwagon;
-        start_stop:                     mu4to24car;
+        can_attach_wagon:               cr300_can_attach;
+        start_stop:                     switch_cr300_start_stop;
 
         // Graphics
-        default:                        switch_cr300bf_front_graphics;
+        default:                        switch_cr300bf_graphics;
         purchase:                       spriteset_cr300bf_purchase_original;
         articulated_part:               switch_cr300bf_articulated_part;
 
         // Stats
         length:                         switch_length_2_8_2;
-        speed:                          250;
-        power:                          return 0;
-        purchase_power:                 return 1830; // HP
-        tractive_effort_coefficient:    return 0;
-        purchase_tractive_effort_coefficient: return int(0.135*255);
         cargo_capacity:                 switch_cr300bf_head_capacity;
         cargo_age_period:               20 * 5 * cafedecayfactor() << param_cargo_decay;
         cost_factor:                    73;
         running_cost_factor:            59 * runningcostfactor() * cafecostfactor() + 20;
         purchase_running_cost_factor:   256;
         purchase_cargo_capacity:        36/3;
+        bitmask_vehicle_info:           switch_cr300_correction;
     }
 
     // Multiple Unit Wagons
     livery_override(zemuw) {
-        default:                        switch_cr300bf_wagon_graphics;
+        default:                        switch_cr300bf_graphics;
         cargo_capacity:                 switch_cr300bf_wagon_capacity;
-        power:                          switch_cr300bf_wagon_power;
-        tractive_effort_coefficient:    switch_cr300bf_wagon_traction;
+        power:                          0;
+        tractive_effort_coefficient:    0;
         length:                         switch_length_2_8_2;
-        weight:                         54;
+        weight:                         0;
         can_attach_wagon:               muhead;
         cargo_age_period:               (switch_crh_wagon_cargo_decay() * cafedecayfactor()) << param_cargo_decay;
         bitmask_vehicle_info:           switch_crh_wagon_bitmask;
@@ -391,12 +284,12 @@ item (FEAT_TRAINS, cr300bf) {
         running_cost_factor:            (switch_cr300bf_wagon_running() + crhspeedcost()) * runningcostfactor() * cafecostfactor() + accostfactor();
     }
     livery_override(zymuw) {
-        default:                        switch_cr300bf_wagon_graphics;
+        default:                        switch_cr300bf_graphics;
         cargo_capacity:                 switch_cr300bf_wagon_capacity;
-        power:                          switch_cr300bf_wagon_power;
-        tractive_effort_coefficient:    switch_cr300bf_wagon_traction;
+        power:                          0;
+        tractive_effort_coefficient:    0;
         length:                         switch_length_2_8_2;
-        weight:                         54;
+        weight:                         0;
         can_attach_wagon:               muhead;
         cargo_age_period:               (switch_crh_wagon_cargo_decay() * cafedecayfactor()) << param_cargo_decay;
         bitmask_vehicle_info:           switch_crh_wagon_bitmask;
@@ -404,12 +297,12 @@ item (FEAT_TRAINS, cr300bf) {
         running_cost_factor:            (switch_cr300bf_wagon_running() + crhspeedcost()) * runningcostfactor() * cafecostfactor() + accostfactor();
     }
     livery_override(zsmuw) {
-        default:                        switch_cr300bf_wagon_graphics;
+        default:                        switch_cr300bf_graphics;
         cargo_capacity:                 switch_cr300bf_wagon_capacity;
-        power:                          switch_cr300bf_wagon_power;
-        tractive_effort_coefficient:    switch_cr300bf_wagon_traction;
+        power:                          0;
+        tractive_effort_coefficient:    0;
         length:                         switch_length_2_8_2;
-        weight:                         54;
+        weight:                         0;
         can_attach_wagon:               muhead;
         cargo_age_period:               (switch_crh_wagon_cargo_decay() * cafedecayfactor()) << param_cargo_decay;
         bitmask_vehicle_info:           switch_crh_wagon_bitmask;
@@ -417,12 +310,12 @@ item (FEAT_TRAINS, cr300bf) {
         running_cost_factor:            (switch_cr300bf_wagon_running() + crhspeedcost()) * runningcostfactor() * cafecostfactor() + accostfactor();
     }
     livery_override(swmuw) {
-        default:                        switch_cr300bf_wagon_graphics;
+        default:                        switch_cr300bf_graphics;
         cargo_capacity:                 switch_cr300bf_wagon_capacity;
-        power:                          switch_cr300bf_wagon_power;
-        tractive_effort_coefficient:    switch_cr300bf_wagon_traction;
+        power:                          0;
+        tractive_effort_coefficient:    0;
         length:                         switch_length_2_8_2;
-        weight:                         54;
+        weight:                         0;
         can_attach_wagon:               muhead;
         cargo_age_period:               (switch_crh_wagon_cargo_decay() * cafedecayfactor()) << param_cargo_decay;
         bitmask_vehicle_info:           switch_crh_wagon_bitmask;
@@ -430,12 +323,12 @@ item (FEAT_TRAINS, cr300bf) {
         running_cost_factor:            (switch_cr300bf_wagon_running() + crhspeedcost()) * runningcostfactor() * cafecostfactor() + accostfactor();
     }
     livery_override(zecmuw) {
-        default:                        switch_cr300bf_wagon_graphics;
+        default:                        switch_cr300bf_graphics;
         cargo_capacity:                 switch_cr300bf_wagon_capacity;
-        power:                          switch_cr300bf_wagon_power;
-        tractive_effort_coefficient:    switch_cr300bf_wagon_traction;
+        power:                          0;
+        tractive_effort_coefficient:    0;
         length:                         switch_length_2_8_2;
-        weight:                         54;
+        weight:                         0;
         can_attach_wagon:               muhead;
         cargo_age_period:               (switch_crh_wagon_cargo_decay() * cafedecayfactor()) << param_cargo_decay;
         bitmask_vehicle_info:           switch_crh_wagon_bitmask;
