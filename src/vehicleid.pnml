@@ -405,10 +405,15 @@ item (FEAT_TRAINS, dj1, 6179) {}
 item (FEAT_TRAINS, _6k, 6180) {}
 /* item (FEAT_TRAINS, fxd1, 6181) {} */
 
-//Multi Power Locomotive, available ID range: 7168-8191 (hex 0x1C00..0x1FFF)
-#define id_range_multi_loco 0x1C00..0x1FFF
+//Multi Power Locomotive, available ID range: 7168-7679 (hex 0x1C00..0x1DFF)
+#define id_range_multi_loco 0x1C00..0x1DFF
 item (FEAT_TRAINS, cha1c, 7168) {}
 item (FEAT_TRAINS, fxsy, 7169) {}
+
+//1500V DC Power Locomotive, available ID range: 7680-8191 (hex 0x1E00..0x1FFF)
+#define id_range_1500v_dc 0x1E00..0x1FFF
+item (FEAT_TRAINS, ge50t, 7680) {}
+
 
 
 //DMU, available ID range: 8192-9215 (hex 0x2000..0x23FF)
