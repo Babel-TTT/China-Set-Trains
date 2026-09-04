@@ -413,6 +413,7 @@ item (FEAT_TRAINS, fxsy, 7169) {}
 //1500V DC Power Locomotive, available ID range: 7680-8191 (hex 0x1E00..0x1FFF)
 #define id_range_1500v_dc 0x1E00..0x1FFF
 item (FEAT_TRAINS, ge50t, 7680) {}
+item (FEAT_TRAINS, dekii, 7681) {}
 
 
 

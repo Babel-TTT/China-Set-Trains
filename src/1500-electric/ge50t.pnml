@@ -37,7 +37,7 @@ item (FEAT_TRAINS, ge50t) {
         model_life:                     100;
         retire_early:                   80;
         vehicle_life:                   100;
-        track_type:                     SACA;
+        track_type:                     SACd;
 
         // Cargo
         refittable_cargo_classes:       bitmask(CC_PASSENGERS);
@@ -81,4 +81,4 @@ item (FEAT_TRAINS, ge50t) {
     }
 }
 
-// End SS8
+// End GE50T

@@ -393,6 +393,7 @@
 
 // 1500V Locomotive
 #include "src/1500-electric/ge50t.pnml"
+#include "src/1500-electric/dekii.pnml"
 
 // DMU
 #include "src/dmu/nc3.pnml"
