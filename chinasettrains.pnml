@@ -208,6 +208,7 @@
 
 
 // Wagons
+#include "src/wagons/musa.pnml"
 #include "src/wagons/c1.pnml"
 #include "src/wagons/c62.pnml"
 #include "src/wagons/c64.pnml"
