@@ -257,6 +257,7 @@
 #include "src/wagons/gs.pnml"
 #include "src/wagons/bgw70.pnml"
 
+#include "src/wagons/chini.pnml"
 #include "src/wagons/n5.pnml"
 #include "src/wagons/n60.pnml"
 #include "src/wagons/nx17.pnml"

@@ -121,7 +121,7 @@ item (FEAT_TRAINS, x2k) {
         name:                           string(STR_NAME_X2K);
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
-        variant_group:					3095;
+        variant_group:					chini;
 
         // Availability
         climates_available:             ALL_CLIMATES;
