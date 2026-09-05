@@ -34,6 +34,8 @@
 // Coaches
 
 #include "src/coaches/smr/ha1.pnml"
+#include "src/coaches/smr/teyu1.pnml"
+
 #include "src/coaches/smr/ha8.pnml"
 #include "src/coaches/smr/ro8.pnml"
 #include "src/coaches/smr/i8.pnml"
