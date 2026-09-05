@@ -258,6 +258,7 @@ STR_NAME_KD7,KD7 (Steam),KD7 (蒸汽)
 STR_NAME_HP,HP (Steam),HP (蒸汽)
 STR_NAME_QJ,QJ (Steam),QJ (蒸汽)
 STR_NAME_SY,SY (Steam),SY (蒸汽)
+STR_NAME_ND,"ND ""Julong"" (Diesel)",ND ""巨龙""型 (内燃)
 STR_NAME_DF,DF (Diesel),DF (内燃)
 STR_NAME_DF2,DF2 (Diesel Shunter),DF2 (内燃) (调车用)
 STR_NAME_DF3,DF3 (Diesel),DF3 (内燃)
@@ -603,6 +604,7 @@ STR_FULL_NAME_SL7,{BLACK}FULLNAME: {GOLD}Pashina Steam Locomotive,{BLACK}全称�
 STR_FULL_NAME_HP,{BLACK}FULLNAME: {GOLD}Heping {BLACK}(Meaning: Peace) {GOLD}Steam Locomotive,{BLACK}全称：{GOLD}和平型内燃机车
 STR_FULL_NAME_QJ,{BLACK}FULLNAME: {GOLD}Qianjin {BLACK}(Meaning: Forward) {GOLD}Steam Locomotive,{BLACK}全称：{GOLD}前进型蒸汽机车
 STR_FULL_NAME_SY,{BLACK}FULLNAME: {GOLD}Shangyou {BLACK}(Meaning: Aiming High) {GOLD}Steam Locomotive,{BLACK}全称：{GOLD}上游型蒸汽机车
+STR_FULL_NAME_ND,{BLACK}FULLNAME: {GOLD}Neidian "Julong" Diesel Locomotive,{BLACK}全称：{GOLD}内电型"巨龙"号内燃机车
 STR_FULL_NAME_DF,{BLACK}FULLNAME: {GOLD}Dongfeng Diesel Locomotive,{BLACK}全称：{GOLD}东风型内燃机车
 STR_FULL_NAME_DF2,{BLACK}FULLNAME: {GOLD}Dongfeng Diesel 2 Locomotive,{BLACK}全称：{GOLD}东风2型内燃机车
 STR_FULL_NAME_DF3,{BLACK}FULLNAME: {GOLD}Dongfeng 3 Diesel Locomotive,{BLACK}全称：{GOLD}东风3型内燃机车
@@ -689,6 +691,7 @@ STR_FULL_NAME_FXSY,{BLACK}FULLNAME: {GOLD}Fuxing Hibrid Locomotive,{BLACK}全称
 # Series Name,,
 STR_JF1_SERIES,JF1 (Steam Locomotive),解放1型 (蒸汽机车)
 STR_QJ_SERIES,QJ Series (Steam Locomotive),前进系列 (蒸汽机车)
+STR_DF_SERIES,DF Series (Diesel Locomotive),DF系列 (内燃机车)
 STR_DF4_SERIES,DF4 Series (Diesel Locomotive),DF4系列 (内燃机车)
 STR_DF4D_SERIES,DF4D Series (Diesel Locomotive),DF4D系列 (内燃机车)
 STR_DF5_SERIES,DF5 Series (Diesel Locomotive),DF5系列 (内燃机车)
