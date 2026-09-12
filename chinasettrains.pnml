@@ -405,6 +405,7 @@
 #include "src/dmu/nyj1_beihai.pnml"
 #include "src/dmu/ndj3.pnml"
 #include "src/dmu/nzj1_xinshuguang.pnml"
+#include "src/dmu/nzj2_shenzhou.pnml"
 #include "src/dmu/nzj2_jinlun_unilaminar.pnml"
 #include "src/dmu/nzj2_jinlun_double_decker.pnml"
 
