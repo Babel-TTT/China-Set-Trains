@@ -48,6 +48,7 @@ sort (FEAT_TRAINS, [
     beijing_passenger,
     beijing_special,
     beijing_reconnect_freight,
+    rd1,
     nd2,
     nd4,
     nd5,

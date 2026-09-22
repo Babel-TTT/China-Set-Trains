@@ -333,6 +333,7 @@
 #include "src/diesel/beijing_freight.pnml"
 #include "src/diesel/beijing_passenger.pnml"
 #include "src/diesel/beijing_special.pnml"
+#include "src/diesel/rd1.pnml"
 #include "src/diesel/nd2.pnml"
 #include "src/diesel/nd4.pnml"
 #include "src/diesel/nd5.pnml"

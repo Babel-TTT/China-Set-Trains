@@ -300,6 +300,7 @@ STR_NAME_BEIJING_PASSENGER,Beijing (Diesel) (Passenger Type),北京 (内燃)  (�
 STR_NAME_BEIJING_FREIGHT,Beijing (Diesel) (Freight Type),北京 (内燃)  (货运型)
 STR_NAME_BEIJING_SPECIAL,Beijing (Diesel) (Special Type),北京 (内燃)  (专运型)
 STR_NAME_BEIJING_RECONNECT_FREIGHT,Beijing (Diesel) (Reconnect Freight Type),北京 (内燃)  (重联货运型)
+STR_NAME_RD1,RD1 "Changzheng" (Gas Turbine),RD1 "长征" (燃气轮机)
 STR_NAME_ND2,ND2 (Diesel),ND2（内燃）
 STR_NAME_ND4,ND4 (Diesel),ND4 (内燃)
 STR_NAME_ND5,ND5 (Diesel),ND5 (内燃)
@@ -642,6 +643,7 @@ STR_FULL_NAME_BEIJING_PASSENGER,{BLACK}FULLNAME: {GOLD}Passenger Type Beijing Di
 STR_FULL_NAME_BEIJING_FREIGHT,{BLACK}FULLNAME: {GOLD}Freight Type Beijing Diesel Locomotive,{BLACK}全称：{GOLD}北京货运型内燃机车
 STR_FULL_NAME_BEIJING_SPECIAL,{BLACK}FULLNAME: {GOLD}Special Type Beijing Diesel Locomotive,{BLACK}全称：{GOLD}北京专运型内燃机车
 STR_FULL_NAME_BEIJING_RECONNECT_FREIGHT,{BLACK}FULLNAME: {GOLD}Reconnect Freight Type Beijing Diesel Locomotive,{BLACK}全称：{GOLD}北京重联货运型内燃机车
+STR_FULL_NAME_RD1,{BLACK}FULLNAME: {GOLD}Changzheng Gas Turbine Locomotive,{BLACK}全称：{GOLD}长征型燃气轮机机车
 STR_FULL_NAME_ND2,{BLACK}FULLNAME: {GOLD}Neidian 2 Diesel Locomotive,{BLACK}全称：{GOLD}内电2型内燃机车
 STR_FULL_NAME_ND4,{BLACK}FULLNAME: {GOLD}Neidian 4 Diesel Locomotive,{BLACK}全称：{GOLD}内电4型内燃机车
 STR_FULL_NAME_ND5,{BLACK}FULLNAME: {GOLD}Neidian 5 Diesel Locomotive,{BLACK}全称：{GOLD}内电5型内燃机车
