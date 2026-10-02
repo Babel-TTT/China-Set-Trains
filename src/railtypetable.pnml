@@ -93,10 +93,10 @@ railtypetable {
     SACD: [SACD, SADD, SAAD, SAAE, ELRL], 
     SADD: [SADD, SAAD, SAAE, ELRL],
 //1.5kV准轨
-    SAAd: [SAAd,/*  SAAD,  */SAAE, ELRL],             
-    SABd: [SABd, SACd, SADd, SAAd,/*  SABD, SAAD,  */SAAE, ELRL], 
-    SACd: [SACd, SADd, SAAd,/*  SACD, SAAD,  */SAAE, ELRL], 
-    SADd: [SADd, SAAd,/*  SADD, SAAD,  */SAAE, ELRL],
+    SAAd: [SAAd, SAAD, SAAE, ELRL],             
+    SABd: [SABd, SACd, SADd, SAAd, SABD, SAAD, SAAE, ELRL], 
+    SACd: [SACd, SADd, SAAd, SACD, SAAD, SAAE, ELRL], 
+    SADd: [SADd, SAAd, SADD, SAAD, SAAE, ELRL],
 //第三轨准轨
     SAA3: [SAA3, SAB3, SAC3, SAD3, "3RDR", MTRO, ELRL],
     SAB3: [SAB3, SAC3, SAD3, SAA3, "3RDR", MTRO, ELRL],
@@ -104,11 +104,11 @@ railtypetable {
     SAD3: [SAD3, SAA3, "3RDR", MTRO, ELRL],
 //窄轨
     NAAN: [NAAN, NGRL],
-    NABN: [NACN, NAAN, NGRL],
+    NACN: [NACN, NAAN, NGRL],
     NAAA: [NAAA, NAAE, ELNG],
-    NABA: [NACA, NAAA, NAAE, ELNG],
+    NACA: [NACA, NAAA, NAAE, ELNG],
     NAAD: [NAAD, NAAE, ELNG],
-    NABD: [NABD, NAAD, NAAE, ELNG],
+    NACD: [NACD, NAAD, NAAE, ELNG],
 //俄罗斯宽轨
     BAAN: [BAAN, RLA0, RAIL],       
     BABN: [BABN, BACN, BADN, BAAN, RLA0, RAIL], 
