@@ -37,7 +37,7 @@ item (FEAT_TRAINS, ge50t) {
         model_life:                     100;
         retire_early:                   80;
         vehicle_life:                   100;
-        track_type:                     SACd;
+        track_type:                     SABd;
 
         // Cargo
         refittable_cargo_classes:       bitmask(CC_PASSENGERS);

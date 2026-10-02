@@ -85,7 +85,7 @@ item (FEAT_TRAINS, cr400bf_j_0001) {
         introduction_date:              date(2021,06,11);
         model_life:                     VEHICLE_NEVER_EXPIRES;
         vehicle_life:                   25;
-        track_type:                     SAAA;
+        track_type:                     SABA;
 
         // Cargo
         refittable_cargo_classes:       bitmask(CC_PASSENGERS);

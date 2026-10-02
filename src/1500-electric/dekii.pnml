@@ -37,7 +37,7 @@ item (FEAT_TRAINS, dekii) {
         model_life:                     60;
         retire_early:                   40;
         vehicle_life:                   30;
-        track_type:                     SACd;
+        track_type:                     SABd;
 
         // Cargo
         refittable_cargo_classes:       bitmask(CC_PASSENGERS);
