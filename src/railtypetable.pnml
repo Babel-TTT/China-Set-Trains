@@ -94,9 +94,10 @@ railtypetable {
     SADD: [SADD, SAAD, SAAE, ELRL],
 //1.5kV准轨
     SAAd: [SAAd, SAAD, SAAE, ELRL],             
-    SABd: [SABd, SACd, SADd, SAAd, SABD, SAAD, SAAE, ELRL], 
-    SACd: [SACd, SADd, SAAd, SACD, SAAD, SAAE, ELRL], 
-    SADd: [SADd, SAAd, SADD, SAAD, SAAE, ELRL],
+    SABd: [SABd, SACd, SADd, SAEd, SAAd, SABD, SAAD, SAAE, ELRL], 
+    SACd: [SACd, SADd, SAEd, SAAd, SACD, SAAD, SAAE, ELRL], 
+    SADd: [SADd, SAEd, SAAd, SADD, SAAD, SAAE, ELRL],
+    SAEd: [SAEd, SAAd, SADD, SAAD, SAAE, ELRL],
 //第三轨准轨
     SAA3: [SAA3, SAB3, SAC3, SAD3, "3RDR", MTRO, ELRL],
     SAB3: [SAB3, SAC3, SAD3, SAA3, "3RDR", MTRO, ELRL],
