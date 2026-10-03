@@ -85,7 +85,7 @@ railtypetable {
     SAAA: [SAAA, SABA, SACA, SADA, SAEA, SAAE, ELRL],       
     SABA: [SABA, SACA, SADA, SAEA, SAAA, SAAE, ELRL], 
     SACA: [SACA, SADA, SAEA, SAAA, SAAE, ELRL], 
-    SADA: [SADA, SAEA, SAAA, SAAE, ELRL], 
+    SADA: [SADA, "SBDA", SAEA, SAAA, SAAE, ELRL],  //适应轨道包修改
     SAEA: [SAEA, SAAA, SAAE, ELRL],
 //3kV准轨
     SAAD: [SAAD, SAAE, ELRL], 
@@ -94,7 +94,7 @@ railtypetable {
     SADD: [SADD, SAAD, SAAE, ELRL],
 //1.5kV准轨
     SAAd: [SAAd, SAAD, SAAE, ELRL],             
-    SABd: [SABd, SACd, SADd, SAEd, SAAd, SABD, SAAD, SAAE, ELRL], 
+    SABd: [SABd, SACd, SADd, SAEd, "SBEd", SAAd, SABD, SAAD, SAAE, ELRL], //适应轨道包修改
     SACd: [SACd, SADd, SAEd, SAAd, SACD, SAAD, SAAE, ELRL], 
     SADd: [SADd, SAEd, SAAd, SADD, SAAD, SAAE, ELRL],
     SAEd: [SAEd, SAAd, SADD, SAAD, SAAE, ELRL],
