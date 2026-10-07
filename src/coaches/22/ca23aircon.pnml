@@ -30,8 +30,8 @@ switch (FEAT_TRAINS, SELF, switch_ca23aircon_articulated_part, extra_callback_in
 }
 
 switch (FEAT_TRAINS, SELF, switch_ca23aircon_cargo_subtype, cargo_subtype) {
-    0: return string(STR_BEIJING2SHANGHAI);
-    1: return string(STR_BEIJING2SHANGHAIALT);
+    0: return string(STR_22BEIJING);
+    1: return string(STR_22SHANGHAI);
     2: return string(STR_GUANGSHEN);
     return CB_RESULT_NO_TEXT;
 }

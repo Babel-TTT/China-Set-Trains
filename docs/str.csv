@@ -1153,9 +1153,9 @@ STR_QINGZANG_LOCO,{BLACK} - Qinghai-Tibet Railway Livery,{BLACK} - {DKGREEN}青�
 STR_QINGZANG,{BLACK} - Qinghai-Tibet Railway Livery (Made in China),{BLACK} - {DKGREEN}青藏铁路涂装 (国产)
 STR_QINGZANG_BSP,{BLACK} - Qinghai-Tibet Railway Livery (Made by BSP),{BLACK} - {DKGREEN}青藏铁路涂装 (BSP)
 STR_WRU,{BLACK} - Wuhan Railway Vocational College of Technology Livery,{BLACK} - 武汉铁路技术学院涂装
-STR_BEIJING2SHANGHAI,{BLACK} - Beijing-Shanghai Express Train Livery {CREAM}Cream-{BROWN}-Brown,{BLACK} - 北京至上海13/14次直快涂装
+STR_22BEIJING,{BLACK} - Beijing-Shanghai Express Train Livery {CREAM}Cream-{BROWN}-Brown,{BLACK} - 北京至上海13/14次直快涂装
 STR_LONGQINGXIA,"{BLACK} - ""Longqingxia"" Livery",{BLACK} - 龙庆峡号涂装
-STR_BEIJING2SHANGHAIALT,{BLACK} - Beijing-Shanghai Express Train Livery {BLUE}Blue-{WHITE}-White,{BLACK} - 北京至上海21/22次直快涂装
+STR_22SHANGHAI,{BLACK} - Beijing-Shanghai Express Train Livery {BLUE}Blue-{WHITE}-White,{BLACK} - 北京至上海21/22次直快涂装
 STR_93_94,{BLACK} - Dalian-Changchun No.93/94 Train Livery,{BLACK} - 大连至长春93/94次列车涂装
 STR_RESCUE,{BLACK} - Wrecker Livery,{BLACK} - 救援涂装
 STR_PANGANG,{YELLOW} - PANGANG Livery,{YELLOW} - 攀钢号涂装
@@ -1223,6 +1223,7 @@ STR_JIXI,{BLACK} - Jixi Coal Mine Livery,{BLACK} - 鸡西煤矿涂装
 STR_DF8_ORIGINAL,{BLACK} - {BLUE}China Raiway Blue Livery,{BLACK} - {BLUE}国铁蓝色涂装
 STR_DF8_LT,{BLACK} - {BLUE}Rio {YELLOW}Tinto {BLUE}Group {YELLOW}Livery,{BLACK} - {BLUE}力拓{YELLOW}公司{GOLD}涂装
 STR_HEXIEHAO,{BLACK} - Livery with Hexie Hao Text,{BLACK} - 带“和谐号”字样涂装
+STR_SANMAO,{BLACK} - Sanshui - Maoming Livery,{BLACK} - 三茂铁路涂装
 # Decay,,
 STR_COMFORT_VERY_LOW,{BLACK}Comfort: {RED}Very low ({COMMA}),{BLACK}舒适度：{RED}极低（{COMMA}）
 STR_COMFORT_LOW,{BLACK}Comfort: {ORANGE}Low ({COMMA}),{BLACK}舒适度：{ORANGE}较低（{COMMA}）
