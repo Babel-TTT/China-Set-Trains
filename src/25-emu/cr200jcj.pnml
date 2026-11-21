@@ -62,19 +62,19 @@ switch (FEAT_TRAINS, SELF, switch_cr200jcj_graphics_tc, position_in_consist_from
 
 switch(FEAT_TRAINS, SELF, switch_cr200jcj_graphics_front, position_in_articulated_veh % 24) {
     1: return spriteset_cr200jcj_m;
-    4: return spriteset_cr200jcj_t_05;
-    7: return spriteset_cr200jcj_t_04;
-    10: return spriteset_cr200jcj_t_03;
-    13: return spriteset_cr200jcj_t_02;
+    4: return spriteset_cr200jcj_t_02;
+    7: return spriteset_cr200jcj_t_03;
+    10: return spriteset_cr200jcj_t_04;
+    13: return spriteset_cr200jcj_t_05;
     16: return switch_cr200jcj_graphics_tc;
     empty_sprites;
 }
 switch(FEAT_TRAINS, SELF, switch_cr200jcj_graphics_end, position_in_articulated_veh_from_end % 24) {
     1: return spriteset_cr200jcj_m_r;
-    4: return spriteset_cr200jcj_t_05_r;
-    7: return spriteset_cr200jcj_t_04_r;
-    10: return spriteset_cr200jcj_t_03_r;
-    13: return spriteset_cr200jcj_t_02_r;
+    4: return spriteset_cr200jcj_t_02_r;
+    7: return spriteset_cr200jcj_t_03_r;
+    10: return spriteset_cr200jcj_t_04_r;
+    13: return spriteset_cr200jcj_t_05_r;
     16: return spriteset_cr200jcj_tc_c_r;
     empty_sprites;
 }
